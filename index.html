@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Cronograma - Maracanaú</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; background: #f4f4f9; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; }
+        .semana { background: white; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .item { display: flex; align-items: center; margin-bottom: 10px; }
+        input[type="checkbox"] { margin-right: 15px; transform: scale(1.2); }
+        input:checked + span { text-decoration: line-through; color: #888; }
+    </style>
+</head>
+<body>
+    <h1>🎯 Progresso de Estudos - 8 Semanas</h1>
+    
+    <div class="semana">
+        <h3>Semana 1: Interpretação e LDB</h3>
+        <label class="item"><input type="checkbox" id="p1"><span>Português: Interpretação e Tipologia</span></label>
+        <label class="item"><input type="checkbox" id="e1"><span>Educação: LDB e Sistema Educacional</span></label>
+        <label class="item"><input type="checkbox" id="a1"><span>Atualidades: Democracia e 8 de Janeiro</span></label>
+    </div>
+
+    <script>
+        // Salva o estado dos checkboxes no navegador
+        document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+            cb.checked = localStorage.getItem(cb.id) === 'true';
+            cb.addEventListener('change', e => {
+                localStorage.setItem(cb.id, cb.checked);
+            });
+        });
+    </script>
+</body>
+</html>
