@@ -5,96 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronograma Maracanaú 2026</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f0f2f5; color: #333; }
-        h1 { text-align: center; color: #1a73e8; }
-        .card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h2 { color: #d93025; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .task { display: flex; align-items: center; padding: 8px 0; border-bottom: 1px solid #fafafa; }
-        input[type="checkbox"] { width: 20px; height: 20px; margin-right: 15px; cursor: pointer; }
-        input:checked + span { text-decoration: line-through; color: #888; }
-        .footer { text-align: center; font-size: 0.9em; color: #666; margin-top: 40px; }
+        :root { --primary: #1a73e8; --bg: #f8f9fa; --text: #202124; --card: #ffffff; --accent: #d93025; }
+        body { font-family: 'Segoe UI', Roboto, sans-serif; background-color: var(--bg); color: var(--text); max-width: 800px; margin: 0 auto; padding: 20px; }
+        header { position: sticky; top: 0; background: var(--bg); padding: 10px 0; z-index: 100; border-bottom: 2px solid #e8eaed; margin-bottom: 30px; }
+        h1 { text-align: center; font-size: 24px; color: var(--primary); margin-bottom: 10px; }
+        
+        .progress-container { background: #e8eaed; border-radius: 10px; height: 12px; width: 100%; margin: 15px 0; }
+        #progress-bar { background: #34a853; width: 0%; height: 100%; border-radius: 10px; transition: width 0.3s ease; }
+        #stats { text-align: center; font-weight: bold; font-size: 14px; }
+
+        .week-card { background: var(--card); border-radius: 8px; padding: 20px; margin-bottom: 20px; shadow: 0 1px 3px rgba(0,0,0,0.12); border-left: 5px solid var(--primary); }
+        h2 { font-size: 18px; color: var(--accent); margin-top: 0; }
+        
+        .task { display: flex; align-items: flex-start; margin: 12px 0; cursor: pointer; }
+        input[type="checkbox"] { width: 18px; height: 18px; margin-right: 12px; margin-top: 3px; cursor: pointer; }
+        .task span { font-size: 15px; }
+        input:checked + span { text-decoration: line-through; color: #80868b; }
+        
+        .cat-note { font-style: italic; font-size: 12px; color: #70757a; text-align: right; margin-top: 40px; }
     </style>
 </head>
 <body>
 
-    <h1>🎯 Meu Progresso - Concurso Maracanaú</h1>
-    <p style="text-align:center;">Marque os conteúdos conforme concluir o estudo. O progresso é salvo automaticamente.</p>
+<header>
+    <h1>🎯 Meu Progresso - Maracanaú 2026</h1>
+    <div id="stats">Concluído: 0%</div>
+    <div class="progress-container"><div id="progress-bar"></div></div>
+</header>
 
-    <div class="card">
-        <h2>Semana 1: Interpretação e Base Legal</h2>
-        <label class="task"><input type="checkbox" id="s1_p1"><span>Português: Interpretação, tipos e gêneros textuais</span></label>
-        <label class="task"><input type="checkbox" id="s1_e1"><span>Educação: LDB (Lei 9.394/96) e Sistema Educacional</span></label>
-        <label class="task"><input type="checkbox" id="s1_a1"><span>Atualidades: Democracia e movimentos de 8 de janeiro</span></label>
+<div id="weeks-container">
+    <div class="week-card">
+        <h2>Semana 1: Interpretação e Legislação Básica</h2>
+        <label class="task"><input type="checkbox" class="study-item"><span>Português: Compreensão e interpretação de texto</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Educação: Sistema educacional brasileiro e LDB</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Atualidades: Democracia e movimentos de 8 de janeiro</span></label>
     </div>
 
-    <div class="card">
-        <h2>Semana 2: Gramática e Matemática Básica</h2>
-        <label class="task"><input type="checkbox" id="s2_p1"><span>Português: Fonética, Acentuação e Ortografia</span></label>
-        <label class="task"><input type="checkbox" id="s2_m1"><span>Matemática: Números inteiros, fracionários e decimais</span></label>
-        <label class="task"><input type="checkbox" id="s2_e1"><span>Educação: PNE e ECA (contexto escolar)</span></label>
+    <div class="week-card">
+        <h2>Semana 2: Normas e Aritmética</h2>
+        <label class="task"><input type="checkbox" class="study-item"><span>Português: Acentuação, Pontuação e Ortografia</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Matemática: Números inteiros, fracionários e decimais</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Educação: Plano Nacional de Educação (PNE)</span></label>
     </div>
 
-    <div class="card">
-        <h2>Semana 3: Sintaxe e Álgebra</h2>
-        <label class="task"><input type="checkbox" id="s3_p1"><span>Português: Morfologia e Análise Sintática</span></label>
-        <label class="task"><input type="checkbox" id="s3_m1"><span>Matemática: Equações de 1º e 2º graus</span></label>
-        <label class="task"><input type="checkbox" id="s3_a1"><span>Atualidades: Mudanças climáticas e eventos extremos</span></label>
+    <div class="week-card">
+        <h2>Semana 3: Morfossintaxe e Álgebra</h2>
+        <label class="task"><input type="checkbox" class="study-item"><span>Português: Classes de palavras e análise sintática</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Matemática: Equações do 1º e 2º graus</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Atualidades: Mudanças climáticas e eventos extremos</span></label>
     </div>
 
-    <div class="card">
-        <h2>Semana 4: Estrutura e Proporcionalidade</h2>
-        <label class="task"><input type="checkbox" id="s4_p1"><span>Português: Coesão, coerência e paragrafação</span></label>
-        <label class="task"><input type="checkbox" id="s4_m1"><span>Matemática: Razão, proporção e regra de três</span></label>
-        <label class="task"><input type="checkbox" id="s4_e1"><span>Educação: Gestão democrática e instâncias colegiadas</span></label>
+    <div class="week-card">
+        <h2>Semana 4: Texto e Proporcionalidade</h2>
+        <label class="task"><input type="checkbox" class="study-item"><span>Português: Coesão, coerência e paragrafação</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Matemática: Razão, proporção e regra de três</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Educação: Gestão democrática na escola pública</span></label>
     </div>
 
-    <div class="card">
-        <h2>Semana 5: Regência e Finanças</h2>
-        <label class="task"><input type="checkbox" id="s5_p1"><span>Português: Concordância, regência e crase</span></label>
-        <label class="task"><input type="checkbox" id="s5_m1"><span>Matemática: Porcentagem e Juros Simples</span></label>
-        <label class="task"><input type="checkbox" id="s5_a1"><span>Atualidades: IA na educação e Letramento Digital</span></label>
+    <div class="week-card">
+        <h2>Semana 5: Sintaxe Avançada e Finanças</h2>
+        <label class="task"><input type="checkbox" class="study-item"><span>Português: Concordância e regência verbal/nominal</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Matemática: Porcentagem e Juro simples</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Atualidades: IA na Educação e Letramento Digital</span></label>
     </div>
 
-    <div class="card">
+    <div class="week-card">
         <h2>Semana 6: Didática e Conjuntos</h2>
-        <label class="task"><input type="checkbox" id="s6_d1"><span>Didática: Paulo Freire, PPP e Planejamento</span></label>
-        <label class="task"><input type="checkbox" id="s6_m1"><span>Matemática: Teoria dos Conjuntos</span></label>
-        <label class="task"><input type="checkbox" id="s6_a1"><span>Atualidades: Racismo estrutural e direitos LGBTQIA+</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Didática: Influência de Paulo Freire e PPP</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Matemática: Teoria dos Conjuntos e Números Reais</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Atualidades: Racismo estrutural e direitos LGBTQIA+</span></label>
     </div>
 
-    <div class="card">
+    <div class="week-card">
         <h2>Semana 7: Avaliação e Realidade Local</h2>
-        <label class="task"><input type="checkbox" id="s7_d1"><span>Didática: Avaliação da aprendizagem e tecnologias</span></label>
-        <label class="task"><input type="checkbox" id="s7_e1"><span>Educação: EJA, Educação Indígena e Inclusiva</span></label>
-        <label class="task"><input type="checkbox" id="s7_a1"><span>Atualidades: Ceará como referência e Segurança no Estado</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Didática: Avaliação da aprendizagem e tecnologias</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Educação: EJA e Educação Inclusiva</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Atualidades: Ceará como referência educacional</span></label>
     </div>
 
-    <div class="card">
-        <h2>Semana 8: Revisão Final</h2>
-        <label class="task"><input type="checkbox" id="s8_p1"><span>Português: Variações linguísticas e revisão geral</span></label>
-        <label class="task"><input type="checkbox" id="s8_m1"><span>Matemática: Sistemas de medida e revisão geral</span></label>
-        <label class="task"><input type="checkbox" id="s8_a1"><span>Atualidades: Saúde mental e violência nas escolas</span></label>
+    <div class="week-card">
+        <h2>Semana 8: Revisão e Temas Sociais</h2>
+        <label class="task"><input type="checkbox" class="study-item"><span>Português: Variações linguísticas e produção textual</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Matemática: Sistemas de medida (tempo e métrico)</span></label>
+        <label class="task"><input type="checkbox" class="study-item"><span>Atualidades: Saúde mental e violência nas escolas</span></label>
     </div>
+</div>
 
-    <div class="footer">
-        Conteúdo extraído do Edital 001/2026 - Prefeitura de Maracanaú.
-    </div>
+<div class="cat-note">"Estudar é o caminho." 🐾</div>
 
-    <script>
-        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+<script>
+    const checkboxes = document.querySelectorAll('.study-item');
+    const progressBar = document.getElementById('progress-bar');
+    const statsText = document.getElementById('stats');
+
+    function updateProgress() {
+        const total = checkboxes.length;
+        const checked = document.querySelectorAll('.study-item:checked').length;
+        const percentage = Math.round((checked / total) * 100);
         
-        // Carrega o progresso salvo
-        checkboxes.forEach(cb => {
-            const status = localStorage.getItem(cb.id);
-            if (status === 'true') cb.checked = true;
-        });
+        progressBar.style.width = percentage + '%';
+        statsText.innerText = `Concluído: ${percentage}% (${checked} de ${total} tópicos)`;
+    }
 
-        // Salva ao clicar
-        checkboxes.forEach(cb => {
-            cb.addEventListener('change', () => {
-                localStorage.setItem(cb.id, cb.checked);
-            });
+    checkboxes.forEach((cb, index) => {
+        // Criar um ID único baseado no índice se não houver
+        const id = 'task-' + index;
+        cb.id = id;
+
+        // Carregar estado salvo
+        const saved = localStorage.getItem(id);
+        if (saved === 'true') cb.checked = true;
+
+        // Salvar ao clicar
+        cb.addEventListener('change', () => {
+            localStorage.setItem(id, cb.checked);
+            updateProgress();
         });
-    </script>
+    });
+
+    // Inicializar progresso
+    updateProgress();
+</script>
+
 </body>
 </html>
