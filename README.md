@@ -1,31 +1,41 @@
-# 📚 Guia de Estudos - Concurso Maracanaú 2026
+# 📅 Plano de Estudos - Maracanaú 2026 (8 Semanas)
 
-## 📑 Língua Portuguesa
-* **Interpretação e Tipologia:** Compreensão e interpretação de texto, tipos e gêneros textuais, situação comunicativa, pressuposto e subentendido.
-* **Sentido e Coesão:** Inferência, ambiguidade, polissemia e intertextualidade.
-* **Estrutura Textual:** Tipos de linguagem, progressão temática, paragrafação, enunciado, coesão e coerência.
-* **Linguística e Norma:** Variações linguísticas, formalidade/informalidade, propriedade lexical e adequação da linguagem.
-* **Gramática:** Fonética e fonologia (encontros, dígrafos), acentuação gráfica, pontuação e ortografia.
-* **Morfossintaxe:** Classes de palavras, processo de formação, análise sintática (período simples e composto).
-* **Sintaxe e Produção:** Concordância e regência (verbal/nominal), sintaxe de colocação e produção textual.
+## 🗓️ Semana 1: Interpretação e Base Legal
+* **Língua Portuguesa:** Compreensão e interpretação de texto, tipos e gêneros textuais.
+* **Conhecimentos Educacionais:** O sistema educacional brasileiro e a LDB (Lei 9.394/96).
+* **Atualidades:** Defesa da Democracia e a crise dos poderes.
 
-## 🧮 Matemática
-* **Aritmética e Operações:** Números relativos inteiros e fracionários, múltiplos, divisores, MDC e MMC.
-* **Decimais e Equações:** Frações ordinárias e decimais, expressões numéricas, equações do 1º e 2º graus.
-* **Medidas e Proporção:** Sistemas de medida (tempo, métrico, monetário), razões, proporções e regra de três.
-* **Finanças e Conjuntos:** Porcentagem, juros simples e fundamentos da Teoria dos Conjuntos.
-* **Conjuntos Numéricos:** Números naturais, inteiros, racionais, irracionais e reais.
+## 🗓️ Semana 2: Gramática e Matemática Básica
+* **Língua Portuguesa:** Fonética, acentuação gráfica, pontuação e ortografia.
+* **Matemática:** Números inteiros, fracionários, decimais, múltiplos, divisores, MDC e MMC.
+* **Conhecimentos Educacionais:** Plano Nacional de Educação (PNE) e Estatuto da Criança e do Adolescente (ECA).
 
-## 🌍 Atualidades e Convivência Societária
-* **Política e Sociedade:** Defesa da democracia, combate ao racismo estrutural, direitos LGBTQIA+ e crise migratória.
-* **Meio Ambiente e Clima:** Mudanças climáticas e eventos extremos (secas e enchentes).
-* **Tecnologia e Educação:** Inteligência Artificial (ChatGPT), letramento digital e combate a Fake News.
-* **Segurança e Proteção:** Violência nas escolas, protocolos de segurança, ECA e facções no Ceará.
-* **Realidade Regional:** Desigualdades no Nordeste, Ceará como referência em alfabetização e tempo integral.
+## 🗓️ Semana 3: Sintaxe e Álgebra
+* **Língua Portuguesa:** Morfologia e análise sintática do período simples e composto.
+* **Matemática:** Expressões numéricas e equações do 1º e 2º graus.
+* **Atualidades:** Mudanças climáticas e eventos extremos no Brasil.
 
-## 🎓 Conhecimentos Educacionais e Didática
-* **Legislação:** LDB (Lei 9.394/96), Plano Nacional de Educação (PNE) e ECA.
-* **Gestão e Organização:** Gestão democrática, instâncias colegiadas, PPP e função social da escola.
-* **Teoria e Prática:** Influência de Paulo Freire, didática como teoria da prática e planejamento educacional.
-* **Avaliação e Tecnologia:** Concepções e instrumentos de avaliação, novas tecnologias na construção do conhecimento.
-* **Inclusão e Diversidade:** EJA, educação indígena e noções de educação inclusiva.
+## 🗓️ Semana 4: Coesão e Proporcionalidade
+* **Língua Portuguesa:** Coesão, coerência, progressão temática e paragrafação.
+* **Matemática:** Razões, proporções, regra de três simples e composta.
+* **Conhecimentos Educacionais:** Gestão democrática e instâncias colegiadas.
+
+## 🗓️ Semana 5: Relações Verbais e Finanças
+* **Língua Portuguesa:** Concordância verbal e nominal, regência e crase.
+* **Matemática:** Porcentagem e Juros Simples.
+* **Atualidades:** Inteligência Artificial na educação, letramento digital e Fake News.
+
+## 🗓️ Semana 6: Didática e Conjuntos
+* **Didática:** Paulo Freire, Projeto Político Pedagógico (PPP) e planejamento.
+* **Matemática:** Teoria dos Conjuntos e Conjuntos Numéricos.
+* **Atualidades:** Racismo estrutural e direitos LGBTQIA+.
+
+## 🗓️ Semana 7: Inclusão e Realidade Local
+* **Didática:** Avaliação da aprendizagem e novas tecnologias.
+* **Conhecimentos Educacionais:** EJA, Educação Indígena e Educação Inclusiva.
+* **Atualidades:** Ceará como referência em educação e segurança pública no estado.
+
+## 🗓️ Semana 8: Revisão Final e Temas Sociais
+* **Língua Portuguesa:** Revisão de variações linguísticas e funções da linguagem.
+* **Matemática:** Revisão de sistemas de medida (tempo, métrico e monetário).
+* **Atualidades:** Saúde mental pós-pandemia e violência nas escolas.
